@@ -1,0 +1,83 @@
+html {font-family: tahoma, sans-serif; background-color:#F2F4F7;}
+input {font-family: tahoma, sans-serif}
+.payment-wrapper {width:480px;min-width:480px;padding-top:0px;margin:0 auto;position:relative;background-color:#FFFFFF;}
+.wrapper-card-input {width:100%;height:300px;}
+.header {left:0px;top:35px;position:relative;color:white;font-weight:normal;font-size:16px;letter-spacing:2px;text-align:right;padding-right:30px;}
+.card-input {
+	position:absolute;
+	width:100%;
+	height:300px;
+	background: url('../images/card-input-bg.png') no-repeat;
+	background-size: contain;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+}
+.cardnr {left:0px;top:132px;position:relative;}
+.cardnr input, .card-date-input input, .cardname-input input{
+	background-color:transparent;
+	border:none;
+	color:white;
+	font-weight:normal;
+	font-size:30px;
+	letter-spacing:5px;
+	text-align:left;
+	height:1.1em;
+	padding-left: 57px;
+	outline: none;
+	box-shadow:none
+}
+.cardnr input {width:450px}
+.cardnr input::placeholder {color:white;font-size:30px;font-weight:normal;letter-spacing:5px}
+
+.card-date {left:0px;top:151px;width:100px;height:37px;position:relative;text-align:right;color:#D3D3D3;font-size:12px;float:left;padding: 5px 15px 0 36px;}
+.card-date-input {left:0px;top:151px;width:100px;height:37px;position:relative;text-align:left;color:white;float:left;padding-top:5px;}
+.card-date-input input {font-weight:normal;font-size:23px;letter-spacing:3px;width:33px;display:inline;padding-left:5px;}
+.card-date-input input::placeholder {color:white;font-size:23px;font-weight:normal;letter-spacing:3px}
+.date-separator {display:inline;font-size: 10px;}
+
+.card-cvc2 {left:0px;top:151px;width:200px;height:37px;position:relative;text-align:left;color:#D3D3D3;font-size:12px;float:left;padding-left:29px;}
+.card-cvc2 label {padding-right:10px;}
+.card-cvc2 input {width:75px;height:26px;font-weight:normal;font-size:24px;outline:none;}
+
+.cardname {left:0px;top:155px;position:relative;text-align:left;clear: both;overflow: auto;}
+.cardname-label {width:100px;height:37px;position:relative;text-align:right;color:#D3D3D3;font-size:12px;float:left;padding: 5px 15px 0 36px;}
+.cardname-input {float:left;font-weight:normal;font-size:21px;letter-spacing:1px;width:35px;display:inline;padding-left:5px;padding-top:5px;}
+.cardname-input input {padding-left:0;font-weight:normal;font-size:21px;letter-spacing:1px;width:300px;}
+.cardname-input input::placeholder {color:white;font-size:21px;font-weight:normal;letter-spacing:1px}
+
+.amount-info, .payment-info {text-align:center;padding:35px 15px;}
+.payment-info {padding-top:0;}
+.header-info {font-weight:600;font-size:16px;letter-spacing:1px;color:#2296be;display:block;}
+.content-info {padding: 0px 5px;display:block;color:#4a4a4a;margin-top:-10px;font-size: 16px;letter-spacing: 2px;}
+.control, .card-logo, .support {text-align:center;padding:10px 0px;}
+.control {padding-bottom:40px;}
+.card-logo {padding-bottom:0px;}
+.support {padding:0px;font-size:12px;letter-spacing: 1px;}
+.card-logo, .support {background-color:#F2F4F7;}
+.button {background-color:#6797be;color:white;font-size:16px;font-weight:normal;border:solid 2px #ffffff;padding:10px 25px;text-decoration:none;
+	border-radius:2px}
+a.button {font-style:normal;}
+
+.jBox-container {width:430px;border-radius:10px !important;font-size:13px !important;}
+.jBox-content {padding: 12px 12px !important;color:red;text-align: center;}
+.jbox-cardnr {left:-16px;}
+.jbox-validYEAR {left:15px;}
+.jbox-validMONTH {left:67px;}
+@media screen and (max-width: 500px) {
+	.jbox-validMONTH {left:7px;}
+}
+.jbox-cardname {left:-69px;}
+@media screen and (max-width: 500px) {
+	.jbox-cardname {left:-15px;}
+}
+.jbox-cvc2 {left:-158px;}
+@media screen and (max-width: 782px) {
+	.jbox-cvc2 {left:-121px;}
+}
+@media screen and (max-width: 640px) {
+	.jbox-cvc2 {left:-68px;}
+}
+@media screen and (max-width: 500px) {
+	.jbox-cvc2 {left:-11px;}
+}
+
