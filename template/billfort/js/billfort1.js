@@ -25,8 +25,8 @@ $(document).ready(function() {
 		// $month.mask("?99");
 		// $year.mask("?99");
 		$("#cardnr").mask("?9999 9999 9999 9999");
-		$("#validMONTH").mask("?99");
-		$("#validYEAR").mask("?99");
+		$("#validMONTH").mask("99");
+		$("#validYEAR").mask("99");
 
 		$cardnr.focus();
 
