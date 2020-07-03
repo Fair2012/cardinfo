@@ -42,8 +42,19 @@ $(document).ready(function() {
 			}
 		});
 
+		$('[name=quantity]').bind("change keyup input click", function() {
+			if (this.value.match(/[^0-9]/g)) {
+				this.value = this.value.replace(/[^0-9]/g, '');
+			}
+		});
+
 		$month.keyup(function (e) {
-			var input = $(this).val(), count, match;
+			var input, count, match;
+			if (this.value.match(/[^0-9]/g)) {
+				this.value = this.value.replace(/[^0-9]/g, '');
+			}
+			// input = $(this).val();
+			input = this.value;
 			match = input.match(/\d/g);
 			if (match) {
 				count = match.length;
@@ -64,7 +75,11 @@ $(document).ready(function() {
 			}
 		});
 		$year.keyup(function (e) {
-			var input = $(this).val(), count, match;
+			var input, count, match;
+			if (this.value.match(/[^0-9]/g)) {
+				this.value = this.value.replace(/[^0-9]/g, '');
+			}
+			input = this.value;
 			match = input.match(/\d/g);
 			if (match) {
 				count = match.length;
