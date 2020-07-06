@@ -12,6 +12,7 @@ $(document).ready(function() {
 		cardYear : 'Год срока действия карты введен не верно',
 		cardDate : 'Проверьте срок действия карты',
 		cardNameEmpty : 'Укажите фамилию и имя владельца карты',
+		cardNameTwo : 'Фамилия и имя должны содержать не менее двух символов',
 		cardNameIncorrect : 'Введите полную фамилию и имя владельца карты',
 		cardNameNotLatin : 'Фамилия и имя владельца должны быть указаны латинскими буквами',
 		cvc2 : 'CVV2/CVC2 должен содержать не менее трех символов'
@@ -235,12 +236,22 @@ $(document).ready(function() {
 	}
 
 	function checkName() {
-		var input, count, match;
+		var input, count, match, words, i;
 		input = $cardname.val().trim().replace(/_/g, "");
 		count = input.length;
 		if (!count) {
 			showError($cardname, errorsMsg.cardNameEmpty);
 			return false;
+		}
+		words = input.split(' ');
+		words.forEach(function(item, i, arr) {
+
+		});
+		for (i = 0; i < words.length; i++) {
+			if (words[i].length <= 1) {
+				showError($cardname, errorsMsg.cardNameTwo);
+				return false;
+			}
 		}
 		match = input.match( /\s/g );
 		if (!match) {
@@ -252,6 +263,7 @@ $(document).ready(function() {
 			showError($cardname, errorsMsg.cardNameNotLatin);
 			return false;
 		}
+
 		return true;
 	}
 });
