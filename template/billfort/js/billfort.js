@@ -21,7 +21,9 @@ $(document).ready(function() {
 	var dpt = window.devicePixelRatio;
 	var widthM = window.screen.width * dpt;
 	console.log(dpt + ' ' + widthM);
-	document.write('<meta name="viewport" content="width=device-width' + ' initial-scale=' + 480 / widthM + '">');
+	if (widthM < 480) {
+		document.write('<meta name="viewport" content="width=device-width' + ' initial-scale=' + widthM / 480 + '">');
+	}
 	init();
 
 	function init() {
