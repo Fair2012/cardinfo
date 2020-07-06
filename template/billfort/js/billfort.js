@@ -49,6 +49,13 @@ $(document).ready(function() {
 			}
 		});
 
+		// $cardnr.keyup(function (e) {
+		// 	var input, count, match;
+		// 	if (this.value.match(/[^0-9_]/g)) {
+		// 		this.value = this.value.replace(/[^0-9_]/g, '');
+		// 	}
+		// });
+
 		$month.keyup(function (e) {
 			var input, count, match;
 			if (this.value.match(/[^0-9]/g)) {
