@@ -21,13 +21,9 @@ $(document).ready(function() {
 	init();
 
 	function init() {
-		// $cardnr.mask("?9999 9999 9999 9999");
-		// $cardnr.focus();
+		$cardnr.mask("9999 9999 9999 9999");
 		// $month.mask("?99");
 		// $year.mask("?99");
-		$("#cardnr").mask("?9999 9999 9999 9999");
-		//$("#validMONTH").mask("99");
-		//$("#validYEAR").mask("99");
 
 		$cardnr.focus();
 
