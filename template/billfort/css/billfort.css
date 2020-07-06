@@ -35,14 +35,14 @@ input {font-family: tahoma, sans-serif}
 .card-date-input input::placeholder {color:white;font-size:23px;font-weight:normal;letter-spacing:3px}
 .date-separator {display:inline;font-size: 10px;}
 
-.card-cvc2 {left:0px;top:151px;width:200px;height:37px;position:relative;text-align:left;color:#D3D3D3;font-size:12px;float:left;padding-left:29px;}
+.card-cvc2 {left:0px;top:151px;width:190px;height:37px;position:relative;text-align:left;color:#D3D3D3;font-size:12px;float:left;padding-left:29px;}
 .card-cvc2 label {padding-right:10px;}
 .card-cvc2 input {width:75px;height:26px;font-weight:normal;font-size:24px;outline:none;}
 
 .cardname {left:0px;top:155px;position:relative;text-align:left;clear: both;overflow: auto;}
 .cardname-label {width:100px;height:37px;position:relative;text-align:right;color:#D3D3D3;font-size:12px;float:left;padding: 5px 15px 0 36px;}
 .cardname-input {float:left;font-weight:normal;font-size:21px;letter-spacing:1px;width:35px;display:inline;padding-left:5px;padding-top:5px;}
-.cardname-input input {padding-left:0;font-weight:normal;font-size:21px;letter-spacing:1px;width:300px;}
+.cardname-input input {padding-left:0;font-weight:normal;font-size:21px;letter-spacing:1px;width:290px;}
 .cardname-input input::placeholder {color:white;font-size:21px;font-weight:normal;letter-spacing:1px}
 
 .amount-info, .payment-info {text-align:center;padding:35px 15px;}
