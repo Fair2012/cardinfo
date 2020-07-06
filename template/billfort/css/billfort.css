@@ -60,7 +60,7 @@ a.button {font-style:normal;}
 
 .jBox-container {width:430px;border-radius:10px !important;font-size:13px !important;}
 .jBox-content {padding: 12px 12px !important;color:red;text-align: center;}
-.jbox-cardnr {left:-16px;}
+.jbox-cardnr {left:0px;}
 .jbox-validYEAR {left:15px;}
 .jbox-validMONTH {left:67px;}
 @media screen and (max-width: 500px) {
