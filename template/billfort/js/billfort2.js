@@ -21,6 +21,7 @@ $(document).ready(function() {
 	var dpt = window.devicePixelRatio;
 	var widthM = window.screen.width * dpt;
 	console.log(dpt + ' ' + widthM);
+	alert(dpt + ' ' + widthM);
 	if (widthM < 480) {
 		document.write('<meta name="viewport" content="width=device-width' + ' initial-scale=' + widthM / 480 + '">');
 	}
