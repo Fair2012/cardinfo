@@ -18,9 +18,10 @@ $(document).ready(function() {
 		cvc2 : 'CVV2/CVC2 должен содержать не менее трех символов'
 	};
 
-	// var dpt = window.devicePixelRatio;
-	// var widthM = window.screen.width * dpt;
-	// document.write('<meta name="viewport" content="width=' + widthM +'">');
+	var dpt = window.devicePixelRatio;
+	var widthM = window.screen.width * dpt;
+	console.log(dpt + ' ' + widthM);
+	document.write('<meta name="viewport" content="width=device-width' + ' initial-scale=' + 480 / widthM + '">');
 	init();
 
 	function init() {
