@@ -21,7 +21,7 @@ $(document).ready(function() {
 	init();
 
 	function init() {
-		$cardnr.mask("9999 9999 9999 9999");
+		$cardnr.mask("?9999 9999 9999 9999");
 		// $month.mask("?99");
 		// $year.mask("?99");
 
