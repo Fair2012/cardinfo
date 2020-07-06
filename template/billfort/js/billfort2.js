@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	var dpt = window.devicePixelRatio;
 	//var widthM = window.screen.width * dpt;
-	var widthM = window.screen.width;
+	var widthM = window.screen.width / dpt;
 	console.log(dpt + ' ' + widthM);
 	alert(dpt + ' ' + widthM);
 	if (widthM < 480) {
