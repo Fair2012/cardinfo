@@ -18,6 +18,9 @@ $(document).ready(function() {
 		cvc2 : 'CVV2/CVC2 должен содержать не менее трех символов'
 	};
 
+	// var dpt = window.devicePixelRatio;
+	// var widthM = window.screen.width * dpt;
+	// document.write('<meta name="viewport" content="width=' + widthM +'">');
 	init();
 
 	function init() {
