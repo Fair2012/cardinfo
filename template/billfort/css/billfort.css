@@ -69,7 +69,7 @@ a.button {font-style:normal;}
 }
 .jbox-cardname {left:-69px;}
 @media screen and (max-width: 500px) {
-	.jbox-cardname {left:-15px;}
+	.jbox-cardname {left:16px;}
 }
 .jbox-cvc2 {left:-158px;}
 @media screen and (max-width: 782px) {
@@ -79,6 +79,6 @@ a.button {font-style:normal;}
 	.jbox-cvc2 {left:-68px;}
 }
 @media screen and (max-width: 500px) {
-	.jbox-cvc2 {left:-11px;}
+	.jbox-cvc2 {left:16px;}
 }
 
