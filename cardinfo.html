@@ -1,94 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./template/billfort/images/bf_favicon.png" type="image/ico"/>
-    <title>Billfort - Оплата банковской картой</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortcut icon" href="./template/billfort/images/bf_favicon.png" type="image/ico"/>
+	<title>Billfort - Оплата банковской картой</title>
 
-    <link rel="stylesheet" href="./template/billfort/css/jBox.min.css" type="text/css" />
-    <link rel="stylesheet" href="./template/billfort/css/billfort.css" type="text/css" />
-	
-    <script type="text/javascript" src="./template/billfort/js/jquery-1.9.1.min.js"></script>
-    <script src="./template/billfort/js/jquery.maskedinput.min.js"></script>
-    <script src="./template/billfort/js/jBox.min.js"></script>
-    <script src="./template/billfort/js/billfort1.js"></script>
-  
+	<link rel="stylesheet" href="./template/billfort/css/jBox.min.css" type="text/css" />
+	<link rel="stylesheet" href="./template/billfort/css/billfort.css" type="text/css" />
+
+	<script type="text/javascript" src="./template/billfort/js/jquery-1.9.1.min.js"></script>
+	<script src="./template/billfort/js/jquery.mask.js"></script>
+	<script src="./template/billfort/js/jBox.min.js"></script>
+	<script src="./template/billfort/js/billfort.js"></script>
+
 </head>
 
 <body>
 <div class="payment-wrapper">
-<div class="payment-container">
-<!--%%formdef%%
-%%trans_id%%
--->
-	<form id="cardentry"
-		  action="http://bank-url"
-		  method="post"
-		  autocomplete="off">
+	<div class="payment-container">
+		%%formdef%%
+        %%trans_id%%
+			<div class="wrapper-card-input">
+				<div class="card-input">
+					<div class="header">
+						<span>ОПЛАТА БАНКОВСКОЙ КАРТОЙ</span>
+					</div>
+					<div class="cardnr">
+						<input type="text"  id="cardnr" name="cardnr" tabindex="1" placeholder="____ ____ ____ ____">
+					</div>
 
-	<div class="wrapper-card-input">
-		<div class="card-input">
-			<div class="header">
-				<span>ОПЛАТА БАНКОВСКОЙ КАРТОЙ</span>
-			</div>
-			<div class="cardnr">
-				<input type="text"  id="cardnr" name="cardnr" tabindex="1" placeholder="____ ____ ____ ____">
-			</div>
+					<div>
+						<div class="card-date">
+							<label>Срок</label><br>
+							<label>действия</label>
+						</div>
 
-			<div>
-				<div class="card-date">
-					<label>Срок</label><br>
-					<label>действия</label>
-				</div>
+						<div class="card-date-input">
+							<input type="text" maxlength="2" id="validMONTH" pattern="[0-9]" name="validMONTH" tabindex="2" placeholder="__">
+							<span class="date-separator">/</span>
+							<input type="text" maxlength="2" id="validYEAR" name="validMONTH" tabindex="3" placeholder="__">
+						</div>
 
-				<div class="card-date-input">
-					<input type="text" maxlength="2" id="validMONTH" name="validMONTH" tabindex="2" placeholder="__">
-					<span class="date-separator">/</span>
-					<input type="text" maxlength="2" id="validYEAR" name="validMONTH" tabindex="3" placeholder="__">
-				</div>
+						<div class="card-cvc2">
+							<label>CVV2/CVC2</label>
+							<input type="password" maxlength="6" id="cvc2" name="cvc2" tabindex="4">
+						</div>
+					</div>
 
-				<div class="card-cvc2">
-					<label>CVV2/CVC2</label>
-					<input type="password" maxlength="6" id="cvc2" name="cvc2" tabindex="4">
-				</div>
-			</div>
-			
-			<div class="cardname">
-				<div class="cardname-label">
-					<label>Имя</label><br>
-					<label>Владельца</label>
-				</div>
-				<div class="cardname-input">
-					<input type="text" maxlength="26" id="cardname" name="cardname" tabindex="5"  placeholder="_______________________">
+					<div class="cardname">
+						<div class="cardname-label">
+							<label>Имя</label><br>
+							<label>Владельца</label>
+						</div>
+						<div class="cardname-input">
+							<input type="text" maxlength="26" id="cardname" name="cardname" tabindex="5"  placeholder="_______________________">
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="info">
-        <div class="amount-info">
-            <label class="header-info">СУММА ОПЛАТЫ</label><br>
-            <label class="content-info">%%amount%% %%ccyalpha%%</label>
-        </div>
-        <div class="payment-info">
-            <label class="header-info">ИНФОРМАЦИЯ О ПЛАТЕЖЕ</label><br>
-            <label class="content-info">%%description%%</label>
-        </div>
+			<div class="info">
+				<div class="amount-info">
+					<label class="header-info">СУММА ОПЛАТЫ</label><br>
+					<label class="content-info">%%amount%% %%ccyalpha%%</label>
+				</div>
+				<div class="payment-info">
+					<label class="header-info">ИНФОРМАЦИЯ О ПЛАТЕЖЕ</label><br>
+					<label class="content-info">%%description%%</label>
+				</div>
+			</div>
+			<div class="control">
+				<a id="submit" class="button" href="#">ОПЛАТИТЬ</a>
+			</div>
+			<div class="card-logo">
+				<img src="./template/billfort/images/card-logo.png">
+			</div>
+			<div class="support">
+				<a class="" href="https://billfort.com/contact-us/" target="_blank">
+					техническая поддержка
+				</a>
+			</div>
+		</form>
 	</div>
-	<div class="control">
-		<a id="submit" class="button" href="#">ОПЛАТИТЬ</a>
-	</div>
-	<div class="card-logo">
-		<img src="./template/billfort/images/card-logo.png">
-	</div>
-	<div class="support">
-		<a class="" href="https://billfort.com/contact-us/" target="_blank">
-		техническая поддержка
-		</a>
-	</div>
-</form>
-</div>
 </div>
 
 </body>

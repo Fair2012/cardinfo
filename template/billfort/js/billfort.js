@@ -18,23 +18,11 @@ $(document).ready(function() {
 		cvc2 : 'CVV2/CVC2 должен содержать не менее трех символов'
 	};
 
-	// var dpt = window.devicePixelRatio;
-	// //var widthM = window.screen.width * dpt;
-	// var widthM = window.screen.width ;
-	// console.log(dpt + ' ' + widthM);
-	// alert(dpt + ' ' + widthM);
-	// if (widthM < 480) {
-	// 	scale = Math.round( widthM / 480, 2);
-	// 	alert(scale);
-	// 	document.write('<meta name="viewport" content="width=device-width' + ' initial-scale=' + scale + '">');
-	// }
 	init();
 
 	function init() {
 		//$cardnr.mask("?9999 9999 9999 9999");
 		$cardnr.mask("0000 0000 0000 0000");
-		// $month.mask("?99");
-		// $year.mask("?99");
 
 		$cardnr.focus();
 
@@ -55,13 +43,6 @@ $(document).ready(function() {
 				this.value = this.value.replace(/[^0-9]/g, '');
 			}
 		});
-
-		// $cardnr.keyup(function (e) {
-		// 	var input, count, match;
-		// 	if (this.value.match(/[^0-9_]/g)) {
-		// 		this.value = this.value.replace(/[^0-9_]/g, '');
-		// 	}
-		// });
 
 		$month.keyup(function (e) {
 			var input, count, match;
