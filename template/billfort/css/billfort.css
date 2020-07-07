@@ -9,7 +9,7 @@ input {font-family: tahoma, sans-serif}
 	width:100%;
 	height:300px;
 	background: url('../images/card-bg.png') no-repeat;
-	background-size: contain;
+	background-size: 100%;
 	border-bottom-left-radius: 18px;
 	border-bottom-right-radius: 18px;
 }
