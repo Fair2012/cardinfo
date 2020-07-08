@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./template/billfort/css/billfort.css" type="text/css" />
 
 	<script type="text/javascript" src="./template/billfort/js/jquery-1.9.1.min.js"></script>
-	<script src="./template/billfort/js/jquery.mask.js"></script>
+	<script src="./template/billfort/js/jquery.mask.min.js"></script>
 	<script src="./template/billfort/js/jBox.min.js"></script>
 	<script src="./template/billfort/js/billfort.js"></script>
 
@@ -19,8 +19,14 @@
 <body>
 <div class="payment-wrapper">
 	<div class="payment-container">
-		%%formdef%%
+		<!--%%formdef%%
         %%trans_id%%
+        -->
+		<form id="cardentry"
+			  action="http://bank-url"
+			  method="post"
+			  autocomplete="off">
+
 			<div class="wrapper-card-input">
 				<div class="card-input">
 					<div class="header">
