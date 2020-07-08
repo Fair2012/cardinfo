@@ -1,12 +1,14 @@
 html {font-family: tahoma, sans-serif; background-color:#F2F4F7;}
 body {margin:0px;}
 input {font-family: tahoma, sans-serif}
-.payment-wrapper {width:480px;padding-top:20px;margin:0 auto;position:relative;background-color:#FFFFFF;}
-.wrapper-card-input {width:100%;height:300px;}
+.payment-wrapper {width:480px;margin:0 auto;position:relative;background-color:#FFFFFF; padding: 20px 0px 0 0px}
+.wrapper-card-input {
+	//width:100%;
+	height:300px;padding: 0 5px;}
 .header {left:0px;top:35px;position:relative;color:white;font-weight:normal;font-size:16px;letter-spacing:2px;text-align:right;padding-right:30px;}
 .card-input {
 	position:absolute;
-	width:100%;
+	//width:480px;
 	height:300px;
 	background: url('../images/card-bg.png') no-repeat;
 	background-size: 100%;
@@ -53,7 +55,7 @@ input {font-family: tahoma, sans-serif}
 .control, .card-logo, .support {text-align:center;padding:10px 0px;}
 .control {padding-bottom:40px;}
 .card-logo {padding-bottom:0px;}
-.support {padding:0px;font-size:12px;letter-spacing: 1px;}
+.support {padding:0px 0 15px;font-size:12px;letter-spacing: 1px;}
 .card-logo, .support {background-color:#F2F4F7;}
 .button {background-color:#6797be;color:white;font-size:16px;font-weight:normal;border:solid 2px #ffffff;padding:10px 25px;text-decoration:none;
 	border-radius:2px}
