@@ -21,6 +21,7 @@ $(document).ready(function() {
 	init();
 
 	function init() {
+		setDesc();
 		//$cardnr.mask("?9999 9999 9999 9999");
 		$cardnr.mask("0000 0000 0000 0000");
 
@@ -110,6 +111,22 @@ $(document).ready(function() {
 		$(document).click(function () {
 			closeTooltip()
 		});
+	}
+
+	function setDesc() {
+		var desc = $('#desc').val(), rows;
+		if (desc) {
+			rows = desc.split('$', 3);
+			if (rows[0] !== undefined) {
+				$('#desc1').val(rows[0]);
+			}
+			if (rows[1] !== undefined) {
+				$('#desc2').val(rows[1]);
+			}
+			if (rows[2] !== undefined) {
+				$('#desc3').val(rows[2]);
+			}
+		}
 	}
 
 	function closeTooltip(){
