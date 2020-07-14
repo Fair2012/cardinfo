@@ -117,13 +117,13 @@ $(document).ready(function() {
 		var desc = $('#desc').text(), rows;
 		if (desc) {
 			rows = desc.split('$', 3);
-			if (rows[0] !== undefined) {
+			if (typeof rows[0] !== 'undefined') {
 				$('#desc1').text(rows[0]);
 			}
-			if (rows[1] !== undefined) {
+			if (typeof rows[1] !== 'undefined') {
 				$('#desc2').text(rows[1]);
 			}
-			if (rows[2] !== undefined) {
+			if (typeof rows[2] !== 'undefined') {
 				$('#desc3').text(rows[2]);
 			}
 		}
