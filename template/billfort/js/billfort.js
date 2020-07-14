@@ -114,7 +114,7 @@ $(document).ready(function() {
 	}
 
 	function setDesc() {
-		var desc = $('#desc').val(), rows;
+		var desc = $('#desc').text(), rows;
 		if (desc) {
 			rows = desc.split('$', 3);
 			if (rows[0] !== undefined) {
