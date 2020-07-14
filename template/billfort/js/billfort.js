@@ -118,13 +118,13 @@ $(document).ready(function() {
 		if (desc) {
 			rows = desc.split('$', 3);
 			if (rows[0] !== undefined) {
-				$('#desc1').val(rows[0]);
+				$('#desc1').text(rows[0]);
 			}
 			if (rows[1] !== undefined) {
-				$('#desc2').val(rows[1]);
+				$('#desc2').text(rows[1]);
 			}
 			if (rows[2] !== undefined) {
-				$('#desc3').val(rows[2]);
+				$('#desc3').text(rows[2]);
 			}
 		}
 	}
