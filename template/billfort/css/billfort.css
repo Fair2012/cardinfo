@@ -49,9 +49,9 @@ input {font-family: tahoma, sans-serif}
 .cardname-input input::placeholder {color:white;font-size:21px;font-weight:normal;letter-spacing:1px}
 
 .amount-info, .payment-info {text-align:center;padding:35px 15px;}
-.payment-info {padding-top:0;}
+.payment-info {padding-top:0;overflow: hidden;}
 .header-info {font-weight:600;font-size:16px;letter-spacing:1px;color:#2296be;display:block;}
-.content-info {padding: 0px 5px;display:block;color:#4a4a4a;margin-top:-10px;font-size: 16px;letter-spacing: 2px;}
+.content-info {padding: 0px 5px;display:block;color:#4a4a4a;margin-top:-10px;font-size: 16px;letter-spacing: 2px;overflow: hidden;}
 .control, .card-logo, .support {text-align:center;padding:10px 0px;}
 .control {padding-bottom:40px;}
 .card-logo {padding-bottom:0px;}
