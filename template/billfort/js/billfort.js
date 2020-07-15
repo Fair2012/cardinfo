@@ -21,7 +21,6 @@ $(document).ready(function() {
 	init();
 
 	function init() {
-		setDesc();
 		//$cardnr.mask("?9999 9999 9999 9999");
 		$cardnr.mask("0000 0000 0000 0000");
 
